@@ -1,0 +1,53 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #ff8c00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  color: #ffffff;
+  margin: 0; /* Remove the default margin from h1 */
+  margin-bottom: 5px; /* Add some margin between the title and the links */
+}
+
+.links {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .navbar h1 {
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+  }
+
+  .links {
+    font-size: 0.8rem; /* Adjusted font size for smaller screens */
+  }
+}
